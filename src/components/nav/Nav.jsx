@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
+import Category from '../category/Category'
 
 function Nav() {
     return (
@@ -16,6 +17,7 @@ function Nav() {
             <Link to="/my-ticket"><nav className="navbar navbar-light bg-light">
             <span className="navbar-brand mb-0 h1">My Ticket</span>
             </nav></Link>
+           
       </div>
     ) 
 }

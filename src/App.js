@@ -3,8 +3,7 @@ import './App.css';
 import {Route, Link} from 'react-router-dom' 
 import Ticket from './components/ticket/Ticket'
 import category from './components/data/category'
-import Nav from './components/nav'
-
+import data from './components/data/data'
 import Nav from './components/nav/Nav'
 import Category from './components/category/Category'
 
@@ -21,7 +20,10 @@ return (
           <Route path="/" component={}/> 
           <Route path="/" component={}/>  */}
         </div>    
-      <Ticket Ticket={category.data} />
+        {/* <Ticket Ticket={category.data} /> */}
+      
+      <Category/>
+      
     </div>
       
 
