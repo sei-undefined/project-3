@@ -1,6 +1,6 @@
 // This is the structure of data in app state
 
-const data=[
+const queues=[
 
     {id: 0,
     catagory:"Resturant",
@@ -81,3 +81,5 @@ const data=[
 
 
 ]
+
+export default queues

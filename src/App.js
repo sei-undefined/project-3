@@ -9,20 +9,28 @@ import Nav from './components/nav/Nav'
 import Category from './components/category/Category'
 
 
+// importing QueueCard tag
+import QueueCard from './components/queue_card/QueueCard'
+
+
 function App() {
 return (
     <div className="App">
-      <div> <Route path="/" component={Nav}/> </div>
+      {/* <div> <Route path="/" component={Nav}/> </div>
         <div className= "category">
           <Route path="/" component={Category}/> 
           {/* <Route exact path="/banks" component={Banks}/> 
           <Route path="/" component={}/> 
           <Route path="/" component={}/> 
           <Route path="/" component={}/> 
-          <Route path="/" component={}/>  */}
+          <Route path="/" component={}/>
         </div>    
-      <Ticket Ticket={category.data} />
+      <Ticket Ticket={category.data} /> */}
+
+      <QueueCard />
+
     </div>
+
       
 
 
