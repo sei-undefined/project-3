@@ -10,20 +10,18 @@ import Category from './components/category/Category'
 
 
 function App() {
-  return (
+return (
     <div className="App">
-
-    <div className="App">
-    <div> <Route path="/" component={Nav}/> </div>
-      <div className= "category">
-        <Route path="/" component={Category}/> 
-        {/* <Route exact path="/banks" component={Banks}/> 
-        <Route path="/" component={}/> 
-        <Route path="/" component={}/> 
-        <Route path="/" component={}/> 
-        <Route path="/" component={}/>  */}
-      </div>    
-    <Ticket Ticket={category.data} />
+      <div> <Route path="/" component={Nav}/> </div>
+        <div className= "category">
+          <Route path="/" component={Category}/> 
+          {/* <Route exact path="/banks" component={Banks}/> 
+          <Route path="/" component={}/> 
+          <Route path="/" component={}/> 
+          <Route path="/" component={}/> 
+          <Route path="/" component={}/>  */}
+        </div>    
+      <Ticket Ticket={category.data} />
     </div>
       
 
