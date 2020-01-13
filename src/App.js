@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Route, Link} from 'react-router-dom' 
+import {Route} from 'react-router-dom' 
 import Ticket from './components/ticket/Ticket'
 import category from './components/data/category'
 
