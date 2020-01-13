@@ -3,7 +3,7 @@ import './App.css';
 import {Route, Link} from 'react-router-dom' 
 import Ticket from './components/ticket/Ticket'
 import category from './components/data/category'
-import Nav from './components/nav'
+
 
 import Nav from './components/nav/Nav'
 import Category from './components/category/Category'
