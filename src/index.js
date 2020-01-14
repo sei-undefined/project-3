@@ -14,8 +14,8 @@ import {Provider} from 'react-redux';
 const store = createStore(reducer)
 
 // wrapping app with browser router and provider tags
-let app = <BrowserRouter><App /></BrowserRouter>
-app = <Provider store={store}>{app}</Provider>
+// let app = <BrowserRouter><App /></BrowserRouter>
+const app = <Provider store={store}><App /></Provider>
 
 ReactDOM.render( app , document.getElementById('root'));
 

@@ -1,16 +1,16 @@
 import React from 'react';
 import './App.css';
-import {Route} from 'react-router-dom' 
-import Ticket from './components/ticket/Ticket'
-import category from './components/data/category'
+// import {Route} from 'react-router-dom' 
+// import Ticket from './components/ticket/Ticket'
+// import category from './components/data/category'
 
 
-import Nav from './components/nav/Nav'
-import Category from './components/category/Category'
+// import Nav from './components/nav/Nav'
+import CardContainer from './components/category/CardContainer'
 
 
 // importing QueueCard tag
-import QueueCard from './components/queue_card/QueueCard'
+// import QueueCard from './components/queue_card/QueueCard'
 
 
 function App() {
@@ -27,7 +27,7 @@ return (
         </div>    
       <Ticket Ticket={category.data} /> */}
 
-      <QueueCard />
+      <CardContainer/>
 
     </div>
 

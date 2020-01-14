@@ -1,14 +1,23 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import {connect} from 'react-redux'
 
 class QueueCard extends Component {
 
     render() { 
-        let queues = this.props.queuesData
-        return ( 
-            <div>
-                {queues.map(queue => <h1>{queue.name}</h1>)}
-            </div>
+        let queue = this.props
+        console.log(queue)
+        return (
+            <Fragment>
+                
+                <div>
+                    <h1>{queue.name}</h1>
+                    <h4>{queue.catagory}</h4>
+                    <div>{queue.count}</div>
+                    <button onClick={()=>this.props.getTicket(queue.id)}>get ticket</button>
+                    <hr></hr>
+                </div>
+                
+            </Fragment>
          );
     }
 }
@@ -19,10 +28,12 @@ const mapStateToProps = (state) =>{
     }
   }
   
-//   const mapDispatchToProps = (dispatch) =>{
-//     return{
-//       addOne: ()=> dispatch({type: "INC_COUNTER"})
-//     }
-//   }
-QueueCard = connect(mapStateToProps)(QueueCard)
+  const mapDispatchToProps = (dispatch) =>{
+    return{
+      getTicket: (num)=> dispatch({
+        type: "GET_TICKET",
+        value: num})
+    }
+  }
+QueueCard = connect(mapStateToProps, mapDispatchToProps)(QueueCard)
 export default QueueCard
