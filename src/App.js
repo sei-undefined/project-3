@@ -17,7 +17,7 @@ import Ticket from './components/ticket/Ticket'
 import data from './components/data/data'
 import Nav from './components/nav/Nav'
 import Categories from './components/category/Categories'
-import Category from   './components/category/Category'
+import Category from   './components/category/category'
 //import images from './images'
 
 
