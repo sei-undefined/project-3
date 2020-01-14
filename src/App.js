@@ -22,20 +22,21 @@ import {Route, Link} from 'react-router-dom'
 
 // import category from './components/data/category'
 import Home from "./components/home/Home"
-// import Services from './components/services/services'
+import Services from './components/services/services'
 // import Nav from './components/nav/Nav'
 // import Category from './components/category/Category'
 // import QueueCard from './components/queueCard/QueueCard'
 import Nearby from './components/nearby/Nearby'
 
 function App() {
+    console.log()
 return (
     // Rebuilding the app here
     <div className="App">
         {/* Navbar and Routes */}
         <Route path="/" component={Nav}/>
         <Route path="/" exact component={CardContainer}/>
-        {/* <Route path="/QueueCard/:id" exact component = {QueueCard} />  */}
+        <Route path="/services/:id" exact render={()=>(<Services />)} /> 
         <Route path= "/nearby" exact component = {Nearby} />
 
         {/* <CardContainer/> */}

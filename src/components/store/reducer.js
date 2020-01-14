@@ -2,6 +2,7 @@ import queues from '../data/data'
 
 const initialState = {
     queuesData: queues,
+    // tickets:[]
 }
 
 const reducer = (state = initialState, action) => {

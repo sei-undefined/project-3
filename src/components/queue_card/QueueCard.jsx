@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import {connect} from 'react-redux'
-import {withRouter} from 'react-router-dom';
+import {withRouter, Link} from 'react-router-dom';
 
 
 class QueueCard extends Component {
@@ -19,6 +19,7 @@ class QueueCard extends Component {
                     <h4>{queue.catagory}</h4>
                     <div>{queue.count}</div>
                     <button onClick={()=>this.props.getTicket(queue.id)}>get ticket</button>
+                    <Link to={`/services/${queue.id}`} key={queue.id} id={queue.id}>Services</Link>
                     <hr></hr>
                 </div>
                 
