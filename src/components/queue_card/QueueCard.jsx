@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import {connect} from 'react-redux'
+import {withRouter} from 'react-router-dom';
+
 
 class QueueCard extends Component {
 
@@ -13,7 +15,7 @@ class QueueCard extends Component {
                 
                 <div>
                     <h1>{queue.name}</h1>
-                    <img src={queue.image[queue.id]} alt=""/>
+                    <img src={queue.image[queue.id]} alt="" style={{ width: "30%" }}/>
                     <h4>{queue.catagory}</h4>
                     <div>{queue.count}</div>
                     <button onClick={()=>this.props.getTicket(queue.id)}>get ticket</button>
@@ -38,5 +40,6 @@ const mapStateToProps = (state) =>{
         value: num})
     }
   }
+QueueCard = withRouter(QueueCard)
 QueueCard = connect(mapStateToProps, mapDispatchToProps)(QueueCard)
 export default QueueCard
