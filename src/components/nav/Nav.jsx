@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import Category from '../category/Categories'
 
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
 import {NavLink} from 'react-router-dom'
 import './Nav.css'
 function Nav() {
