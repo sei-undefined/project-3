@@ -12,14 +12,14 @@ const data=[
     {id: 1,
     catagory:"Resturant",
     name:"P.F. Chang's",
-    image:"image_url",
+    image:"https://static.wixstatic.com/media/bd92e4_4a4601d7c0bf4adeb607ea5f62487100~mv2.png/v1/fill/w_1024,h_768,al_c,q_90/file.jpg",
     crowded: false,
     count: 0},
 
     {id: 2,
     catagory:"Resturant",
     name:"Cioccolati Italiani",
-    image:"image_url",
+    image:"https://i2.wp.com/www.foodmakers.it/wp-content/uploads/2018/11/CIOCCOLATI-ITALIANI-DOHA-QATAR-3.jpg?resize=800%2C536&ssl=1",
     crowded: false,
     count: 0},
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
-import Category from '../category/Category'
+import Category from '../category/Categories'
 
 function Nav() {
     return (
