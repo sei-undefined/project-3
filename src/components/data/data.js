@@ -100,7 +100,6 @@ const queues=[
     services:"Customer Service"
 }
 
-
 ]
 
 export default queues
