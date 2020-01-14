@@ -12,7 +12,7 @@ import CardContainer from './components/category/CardContainer'
 // importing QueueCard tag
 // import QueueCard from './components/queue_card/QueueCard'
 import {Route, Link} from 'react-router-dom' 
-// import Ticket from './components/ticket/Ticket'
+import Ticket from './components/ticket/Ticket'
 //import category from './components/data/category'
 // import data from './components/data/data'
 // import Nav from './components/nav/Nav'
@@ -38,6 +38,7 @@ return (
         <Route path="/" exact component={CardContainer}/>
         <Route path="/services/:id" exact render={()=>(<Services />)} /> 
         <Route path= "/nearby" exact component = {Nearby} />
+        <Route path= "/ticket/:id" exact component = {Ticket} />
 
         {/* <CardContainer/> */}
     </div>

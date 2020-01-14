@@ -17,8 +17,9 @@ class QueueCard extends Component {
                     <h1>{queue.name}</h1>
                     <img src={queue.image[queue.id]} alt="" style={{ width: "30%" }}/>
                     <h4>{queue.catagory}</h4>
-                    <div>{queue.count}</div>
-                    <button onClick={()=>this.props.getTicket(queue.id)}>get ticket</button>
+                    {/* <div>{queue.count}</div> */}
+                    {/* <button onClick={()=>this.props.getTicket(queue.id)}>get ticket</button> */}
+                    <br></br>
                     <Link to={`/services/${queue.id}`} key={queue.id} id={queue.id}>Services</Link>
                     <hr></hr>
                 </div>

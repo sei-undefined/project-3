@@ -7,6 +7,7 @@ import category from '../data/category'
 class Ticket extends Component {
     state = {  }
     render() { 
+        
         const dateToFormat = '1976-04-19T12:59-0500';
             
  
