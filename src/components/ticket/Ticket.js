@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import category from './category'
+// import category from '../data/category'
 
 class Ticket extends Component {
     state = {  }
