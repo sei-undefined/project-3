@@ -1,8 +1,7 @@
 import queues from '../data/data'
 
 const initialState = {
-    queuesData: queues,
-    tickets:[]
+    queuesData: queues
 }
 
 const reducer = (state = initialState, action) => {
@@ -11,12 +10,12 @@ const reducer = (state = initialState, action) => {
             const copyQueuesData = state.queuesData.map(queue => {
                 if(queue.id === action.value)
                     queue.count +=1
+                    queue.tickets.push(queue.count+1)
                 return queue
             })
             return{
                 ...state,
-                queuesData: copyQueuesData,
-                tickets: state.tickets.concat()
+                queuesData: copyQueuesData
             }
         default:
             return state

@@ -9,7 +9,8 @@ const queues=[
     image: images,
     crowded: false,
     count: 0,
-    services:["Table"]
+    services:["Table"],
+    tickets:[]
 },
 
     {id: 1,
@@ -19,7 +20,8 @@ const queues=[
     // image:"https://static.wixstatic.com/media/bd92e4_4a4601d7c0bf4adeb607ea5f62487100~mv2.png/v1/fill/w_1024,h_768,al_c,q_90/file.jpg",
     crowded: false,
     count: 0,
-    services:["Table"]},
+    services:["Table"],
+    tickets:[]},
 
     {id: 2,
     category:"Resturant",
@@ -28,7 +30,8 @@ const queues=[
     // image:"https://i2.wp.com/www.foodmakers.it/wp-content/uploads/2018/11/CIOCCOLATI-ITALIANI-DOHA-QATAR-3.jpg?resize=800%2C536&ssl=1",
     crowded: false,
     count: 0,
-    services:["Table"]
+    services:["Table"],
+    tickets:[]
 },
 
     {id: 3,
@@ -37,7 +40,8 @@ const queues=[
     image:images,
     crowded: false,
     count: 0,
-    services:["Table"]
+    services:["Table"],
+    tickets:[]
 },
 
     {id: 4,
@@ -46,7 +50,8 @@ const queues=[
     image:images,
     crowded: false,
     count: 0,
-    services:["Table"]
+    services:["Table"],
+    tickets:[]
 },
 
     {id: 5,
@@ -55,7 +60,8 @@ const queues=[
     image:images,
     crowded: false,
     count: 0,
-    services:["Customer Service","Teller"]
+    services:["Customer Service","Teller"],
+    tickets:[]
 },
 
     {id: 6,
@@ -64,7 +70,8 @@ const queues=[
     image:images,
     crowded: false,
     count: 0,
-    services:["Customer Service","Teller"]
+    services:["Customer Service","Teller"],
+    tickets:[]
 },
 
     {id: 7,
@@ -73,7 +80,8 @@ const queues=[
     image:images,
     crowded: false,
     count: 0,
-    services:["Customer Service","Teller"]
+    services:["Customer Service","Teller"],
+    tickets:[]
 },
 
     {id: 8,
@@ -82,7 +90,8 @@ const queues=[
     image:images,
     crowded: false,
     count: 0,
-    services:["Customer Service","Appointments","Emergency"]
+    services:["Customer Service","Appointments","Emergency"],
+    tickets:[]
 },
 
     {id: 9,
@@ -91,7 +100,8 @@ const queues=[
     image:images,
     crowded: false,
     count: 0,
-    services:["Appointment","Customer Service","Information"]
+    services:["Appointment","Customer Service","Information"],
+    tickets:[]
 },
 
     {id: 10,
@@ -100,7 +110,8 @@ const queues=[
     image:images,
     crowded: false,
     count: 0,
-    services:["Appointment","Customer Service","Information"]
+    services:["Appointment","Customer Service","Information"],
+    tickets:[]
 }
 
 ]

@@ -39,8 +39,8 @@ return (
         <Route path="/" exact component={CardContainer}/>
         <Route path="/services/:id" exact render={()=>(<Services />)} /> 
         <Route path= "/nearby" exact component = {Nearby} />
-        <Route path= "/ticket/:id" exact component = {Ticket} />
-        <Test></Test>
+        <Route path= "/services/:id/ticket/:id" exact component = {Ticket} />
+        
 
         {/* <CardContainer/> */}
     </div>

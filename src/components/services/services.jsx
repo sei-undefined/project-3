@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import {connect} from 'react-redux';
-import { withRouter } from 'react-router';
+import { withRouter, Link } from 'react-router-dom';
 
 class Services extends Component {
     render() {
@@ -20,7 +20,9 @@ class Services extends Component {
                 <div><img src={data.image[id]} width="200px"/></div>
                 <div><h4>Services:</h4></div>
                 <div>{data.services.map(service=><li>{service}</li>)}</div>
-                <button>get your ticket</button>
+                <button>
+                    <Link to={`/services/${id}/ticket/0`}>Get ticket</Link>
+                </button>
 
             </div>
             </Fragment>
