@@ -19,8 +19,9 @@ class Services extends Component {
                 <h2>{data.name}</h2>
                 <div><img src={data.image[id]} width="200px"/></div>
                 <div><h4>Services:</h4></div>
-        <div>{data.services.map(service=><li>{service}</li>)}</div>
+                <div>{data.services.map(service=><li>{service}</li>)}</div>
                 <button>get your ticket</button>
+
             </div>
             </Fragment>
 
@@ -31,9 +32,11 @@ class Services extends Component {
 
 const mapStateToProps = (state) =>{
     return{
-        queuesData: state.queuesData
+        queuesData: state.queuesData,
+        tickets: state.tickets
     }
 }
+
 Services = withRouter(Services)
 Services = connect(mapStateToProps)(Services)
 export default Services;
