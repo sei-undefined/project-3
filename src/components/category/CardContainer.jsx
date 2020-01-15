@@ -8,8 +8,8 @@ class CardContainer extends Component {
         let queues = this.props.queuesData
         return ( 
             <div>
-                {console.log("this is CardContainer props")}
-                {console.log(this.props)}
+                {/* {console.log("this is CardContainer props")} */}
+                {/* {console.log(this.props)} */}
                 {queues.map(queue => (
                 <QueueCard 
                 key={queue.id}
@@ -17,6 +17,7 @@ class CardContainer extends Component {
                 name={queue.name}
                 category={queue.category}
                 count={queue.count}
+                image={queue.image}
                 />
                 ))}
             </div>

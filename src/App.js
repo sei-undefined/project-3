@@ -5,7 +5,7 @@ import './App.css';
 // import category from './components/data/category'
 
 
-// import Nav from './components/nav/Nav'
+import Nav from './components/nav/Nav'
 import CardContainer from './components/category/CardContainer'
 
 
@@ -14,23 +14,36 @@ import CardContainer from './components/category/CardContainer'
 import {Route, Link} from 'react-router-dom' 
 import Ticket from './components/ticket/Ticket'
 //import category from './components/data/category'
-import data from './components/data/data'
-import Nav from './components/nav/Nav'
-import Categories from './components/category/Categories'
-import Category from   './components/category/category'
+// import data from './components/data/data'
+// import Nav from './components/nav/Nav'
+// import Categories from './components/category/Categories'
+// import Category from   './components/category/category'
 //import images from './images'
 
-import category from './components/data/category'
+// import category from './components/data/category'
 import Home from "./components/home/Home"
 import Services from './components/services/services'
-import Nav from './components/nav/Nav'
-import Category from './components/category/Category'
-import QueueCard from './components/queueCard/QueueCard'
+// import Nav from './components/nav/Nav'
+// import Category from './components/category/Category'
+// import QueueCard from './components/queueCard/QueueCard'
 import Nearby from './components/nearby/Nearby'
+import Test from './components/test'
 
 function App() {
+    console.log()
 return (
-    <div></div>
+    // Rebuilding the app here
+    <div className="App">
+        {/* Navbar and Routes */}
+        <Route path="/" component={Nav}/>
+        <Route path="/" exact component={CardContainer}/>
+        <Route path="/services/:id" exact render={()=>(<Services />)} /> 
+        <Route path= "/nearby" exact component = {Nearby} />
+        <Route path= "/ticket/:id" exact component = {Ticket} />
+        <Test></Test>
+
+        {/* <CardContainer/> */}
+    </div>
     // <div className="App">
     //     <Route path="/" component={Nav}/>
     //     <Route path="/" exact component={Home}/>
