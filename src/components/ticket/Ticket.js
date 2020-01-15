@@ -9,6 +9,18 @@ import images from "../../images/images";
  //import Ticket from 'ticket.css'
 class Ticket extends Component {
     state = {  }
+    // componentDidMount(){
+    //     url= "http://worldtimeapi.org/api/ip"
+    //     axios.get(url)
+    //     .then((res)=> {
+    //     // handle success
+    //     res.datetime
+    //     })
+    //     .catch((error)=> {
+    //     // handle error
+    //     console.log(error)
+    //     })
+    // }
     render() { 
         // finding id
         // console.log("render it")
@@ -21,16 +33,27 @@ class Ticket extends Component {
         
         const dateToFormat = '2020-01-19T12:59-0500';
             
+
+        console.log("this is tickets props")
+        console.log(this.props)
+
+        // tickets array data
+        const tData = data.tickets[id]
+        console.log("this is tData")
+        console.log(tData);
+        
  
         
     //    let  allCatogry=this.props.Ticket;
+        
         return (
         <div className="container">   
             <div id="accordion" role="tablist">
                 <div className="card">
                     <div className="card-header headert">
                         <h2>E-Ticket:</h2>
-                        
+                        <h2>{`You are ${data.tickets}`}</h2>
+                        <h2>{this.a}</h2>
                         <Moment locale="de">{dateToFormat}</Moment>
                     </div>
                     <div className="card-body">
