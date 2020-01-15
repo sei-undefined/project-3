@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import image from '../../images/Queue.jpeg'
+
 import "./Header.css"
 import {NavLink} from 'react-router-dom'
 
