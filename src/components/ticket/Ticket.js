@@ -10,12 +10,15 @@ class Ticket extends Component {
     state = {  }
     render() { 
         // finding id
+        // console.log("render it")
         const id=this.props.match.params.id
         let data = this.props.queuesData
+        // console.log(data)
         data = data.find(queue=>queue.id ==id)
 
         const dateToFormat = '1976-04-19T12:59-0500';
-            
+        console.log("this is tickets props")
+        console.log(this.props)
  
         
     //    let  allCatogry=this.props.Ticket;
@@ -25,6 +28,7 @@ class Ticket extends Component {
                 <div className="card">
                     <div className="card-header">
                         <h2>E-Ticket:</h2>
+                        <h2>{`You are ${data.tickets}`}</h2>
                         <Moment locale="de">{dateToFormat}</Moment>
                     </div>
                     <div className="card-body">
@@ -35,6 +39,9 @@ class Ticket extends Component {
             </div>
         </div>
         );
+        // componentDidMount(){
+
+        // }
     }
 }
 

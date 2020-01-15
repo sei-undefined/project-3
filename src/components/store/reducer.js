@@ -5,12 +5,14 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
+    console.log(action)
     switch (action.type) {
         case "GET_TICKET":
             const copyQueuesData = state.queuesData.map(queue => {
-                if(queue.id === action.value)
+                if(queue.id === Number(action.value)){
                     queue.count +=1
-                    queue.tickets.push(queue.count+1)
+                    queue.tickets=queue.tickets.concat(queue.count)
+                }
                 return queue
             })
             return{
