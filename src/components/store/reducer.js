@@ -5,13 +5,17 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
-    console.log(action)
+    // console.log(action)
     switch (action.type) {
         case "GET_TICKET":
             const copyQueuesData = state.queuesData.map(queue => {
                 if(queue.id === Number(action.value)){
                     queue.count +=1
-                    queue.tickets=queue.tickets.concat({turn:queue.count, time:"time goes here"})
+                    queue.tickets=queue.tickets.concat({
+                        id:queue.count,
+                        name:queue.name,
+                        turn:queue.count,
+                        time:action.time})
                 }
                 return queue
             })
@@ -19,6 +23,21 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 queuesData: copyQueuesData
             }
+        // case "SET_TIME":
+        //     const copyQueuesData = state.queuesData.map(queue => {
+        //         if(queue.id === Number(action.idvalue)){
+        //             queue.tickets=queue.tickets.concat({
+        //                 name:queue.name,
+        //                 turn:queue.count,
+        //                 time:"time goes here"})
+        //         }
+        //         return queue
+        //     })
+            return{
+                ...state,
+                queuesData: copyQueuesData
+            }
+            
         default:
             return state
     }

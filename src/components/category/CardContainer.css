@@ -1,6 +1,8 @@
 .container {
+    display:flex;
+    flex-direction: column;
     background-color: #c7c7c9;
     margin-top:47%;
-    margin-left:-10%;
+    /* margin-left:-10%; */
     opacity:1.0;
 }

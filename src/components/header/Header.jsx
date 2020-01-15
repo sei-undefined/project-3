@@ -9,6 +9,7 @@ class Header extends Component {
             <div className="header" >
                 <div className="nav-div-links">
                     <NavLink className="nav-link" to={`/`} activeClassName="chosen" ><h1 className="Navs">HOME </h1>  </NavLink>
+                    <NavLink className="nav-link" to={`/tickets`} activeClassName="chosen" > <h1 className="Navs">Tickets </h1> </NavLink>
                     <NavLink className="nav-link" to={`/nearby`} activeClassName="chosen" > <h1 className="Navs">Nearby </h1> </NavLink>
                 </div>
         

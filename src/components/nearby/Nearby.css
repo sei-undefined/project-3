@@ -1,0 +1,10 @@
+.container_n {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c7c7c9;
+    margin-top:47%;
+    /* margin-left:-10%;*/
+    opacity:1.0; 
+}
