@@ -1,0 +1,28 @@
+.header{
+
+    /* background-image: url("../../images/Queue.jpeg"); */
+    /* background-size: ;
+    background-repeat:no-repeat; */
+    /* display: block; */
+    width: 150px;
+    height: 300px;
+    
+    
+}
+.image {
+  /* width:100%; */
+  width:1280px;
+  /* position: fixed; */
+  top:0px;
+  /* opacity: 0.3; */
+  left:0px;
+  /* height: 450px; */
+}
+.nav-div-links{
+  display: flex;
+  position: fixed;
+  /* opacity: 0.3; */
+  color: #c7c7c9;
+
+
+}
