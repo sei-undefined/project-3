@@ -1,9 +1,18 @@
 .App {
   text-align: center;
-  display: flex;
+  font-family:'Indie Flower', cursive;
+  font-weight: bold;
+  color:#696994;
+  background-color: #c7c7c9;
 }
 
-.App-logo {
+
+.app-container{
+  display: flex;
+  flex-direction: column;
+
+}
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -36,4 +45,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

@@ -3,7 +3,7 @@ import './App.css';
 // import {Route} from 'react-router-dom' 
 // import Ticket from './components/ticket/Ticket'
 // import category from './components/data/category'
-
+import Header from "./components/header/Header"
 
 import Nav from './components/nav/Nav'
 import CardContainer from './components/category/CardContainer'
@@ -42,6 +42,20 @@ return (
         <Route path= "/services/:id/ticket/:id" exact component = {Ticket} />
         
 
+        {/* <div className="header" ></div> */}
+        <div className="app-container">
+          <Route path="/" render={() => {
+            return (
+              <div>
+                <Nav/>
+              <Header></Header>
+
+              </div>
+            )
+          }}/>
+
+
+        </div>
         {/* <CardContainer/> */}
     </div>
     // <div className="App">
@@ -104,7 +118,23 @@ return (
 
     //     </div>    
     //   // <Ticket Ticket={category.data} />
-)
+
+        // <Route path="/" exact component={Home}/>
+        // <Route path="/QueueCard/:id" exact component = {QueueCard} /> 
+        // <Route path= "/nearby" exact render={()=>
+
+        //   <Nearby
+        //     isMarkerShown
+        //     googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyC-1GTDyGVavSN01qsX-WdiZdVp-LP4gqY"
+        //     loadingElement={<div style={{ height: `100%` }} />}
+        //     containerElement={<div style={{ height: `400px` }} />}
+        //     mapElement={<div style={{ height: `100%` }} />}
+        //   />
+        // } />
+        // {/* ticket  */}
+        // </div>    
+      // <Ticket Ticket={category.data} />
+  )
 }
 
 export default App;

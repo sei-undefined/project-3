@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';    
 import QueueCard from '../queue_card/QueueCard';
-
+import './CardContainer.css'
 class CardContainer extends Component {
-
+//style={{marginRight: spacing + 'em'}}
     render() { 
         let queues = this.props.queuesData
         return ( 
-            <div>
+            <div className='container'>
                 {/* {console.log("this is CardContainer props")} */}
                 {/* {console.log(this.props)} */}
                 {queues.map(queue => (

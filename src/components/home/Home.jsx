@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import data from '../data/data'
 import QueueCard from '../queueCard/QueueCard';
 import {Link} from 'react-router-dom'
+import "./Home.css"
 class Home extends Component {
     state = {  }
     render() {
 
         return ( 
-            <div> 
+            <div className="home" style="top:20%"> 
                 {/* all cards */}
               {data.map(queue=> {
               return ( 

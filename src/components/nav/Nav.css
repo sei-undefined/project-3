@@ -1,11 +1,54 @@
-.navbar-list a.chosen,
-.navbar-list a:hover {
+/* .navbar-list a:hover { */
+
+/* .navbar-list a.chosen{
   border-bottom: 1px solid #F14B31;
-}
-/* .nav-div {
-    padding: 10%;
 } */
+.nav-div {
+    display: flex;
+    /* display:absolute; */
+    flex-direction: row;
+    padding: 0%;
+    /* margin-top:-26%; */
+    height: 1%;
+}
+
+.Navs {
+    /* margin-bottom: 25%; */
+    font-weight: 900;
+    font-size: 3em;
+    color:#6f6f82;
+    bottom:0px;
+
+}
+.Navs:hover {
+    background-color: rgba(108, 108, 120, 0.3);
+    text-decoration: none;
+    width:180px;
+    height: 70px;
+    border-radius: 5px;
+
+}
+.chosen:hover {
+ 
+}
+hr {
+    /* color:white; */
+    outline:solid #6f6f82
+}
+
+.nav-link{
+    padding:20px;
+}
 
 /* *, ::after, ::before  {
     padding: 30%;
 } */
+
+
+/*!
+ * Start Bootstrap - Agency v5.2.2 (https://startbootstrap.com/template-overviews/agency)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
+ */
+
+ 
