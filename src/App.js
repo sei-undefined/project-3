@@ -35,11 +35,7 @@ return (
     // Rebuilding the app here
     <div className="App">
         {/* Navbar and Routes */}
-        <Route path="/" component={Nav}/>
-        <Route path="/" exact component={CardContainer}/>
-        <Route path="/services/:id" exact render={()=>(<Services />)} /> 
-        <Route path= "/nearby" exact component = {Nearby} />
-        <Route path= "/services/:id/ticket/:id" exact component = {Ticket} />
+
         
 
         {/* <div className="header" ></div> */}
@@ -53,6 +49,10 @@ return (
               </div>
             )
           }}/>
+          <Route path="/" exact component={CardContainer}/>
+          <Route path="/services/:id" exact render={()=>(<Services />)} /> 
+          <Route path= "/nearby" exact component = {Nearby} />
+          <Route path= "/services/:id/ticket/:id" exact component = {Ticket} />
 
 
         </div>
