@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import {connect} from 'react-redux';
 import { withRouter, Link } from 'react-router-dom';
-
+import services from './services.css'
 class Services extends Component {
     render() {
         
@@ -14,13 +14,18 @@ class Services extends Component {
         // console.log(data.services)
         return (
             <Fragment>
-            <div>
-                <h1>Services Componenet</h1>
-                <h2>{data.name}</h2>
-                <div><img src={data.image[id]} width="200px"/></div>
-                <div><h4>Services:</h4></div>
+                
+                <div className="container">
+              <div className="card">
+                <div className="card-body">
+                <h1 className="card-text">Services</h1>
+                </div>
+                <div ><h4 className="card-text">{data.name}</h4><br/></div>
+                <div><img  src={data.image[id]} width="200px"/></div>
+                <div className="card-body"><h4 class="card-text" >Services:</h4></div>
                 <div>{data.services.map(service=><li>{service}</li>)}</div>
-                <button onClick={()=>{
+                <button className="btn btn-primary btn-lg active"
+                onClick={()=>{
                         this.props.getTicket(id)
                         this.props.history.replace(`/services/${id}/ticket/${id}`)
                     }}>
@@ -28,7 +33,8 @@ class Services extends Component {
                     
                    Get Ticket
                 </button>
-
+                
+            </div>
             </div>
             </Fragment>
 
