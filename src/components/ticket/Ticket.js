@@ -16,9 +16,6 @@ class Ticket extends Component {
         // console.log(data)
         data = data.find(queue=>queue.id ==id)
 
-       
-        console.log("this is tickets props")
-        console.log(this.props)
         
         
         const dateToFormat = '2020-01-19T12:59-0500';
