@@ -11,7 +11,7 @@ const reducer = (state = initialState, action) => {
             const copyQueuesData = state.queuesData.map(queue => {
                 if(queue.id === Number(action.value)){
                     queue.count +=1
-                    queue.tickets=queue.tickets.concat(queue.count)
+                    queue.tickets=queue.tickets.concat({turn:queue.count, time:"time goes here"})
                 }
                 return queue
             })
