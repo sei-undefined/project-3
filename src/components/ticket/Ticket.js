@@ -8,7 +8,7 @@ class Ticket extends Component {
     state = {  }
     render() { 
         
-        const dateToFormat = '1976-04-19T12:59-0500';
+        const dateToFormat = '2020-01-19T12:59-0500';
             
  
         
