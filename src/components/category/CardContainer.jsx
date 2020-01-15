@@ -18,6 +18,7 @@ class CardContainer extends Component {
                 category={queue.category}
                 count={queue.count}
                 image={queue.image}
+                AllData={queues}
                 />
                 ))}
             </div>
