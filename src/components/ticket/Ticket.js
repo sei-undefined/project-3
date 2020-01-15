@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import category from './data/category'
+
 import Moment from 'react-moment';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import category from '../data/category'
