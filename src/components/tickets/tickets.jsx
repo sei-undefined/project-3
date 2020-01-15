@@ -11,6 +11,7 @@ class Tickets extends Component {
         tickets = tickets.concat(queues.map(q=>q.tickets))
         tickets = tickets.reduce((acc,curr)=>curr.concat(acc))
         console.log(tickets);
+
         
 
         return ( 

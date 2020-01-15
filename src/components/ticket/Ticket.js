@@ -39,6 +39,11 @@ class Ticket extends Component {
 
         // tickets array data
         const tData = data.tickets[data.count-1]
+        let time = tData.time.split("T")
+        const splitAt = index => x => [x.slice(0, index), x.slice(index)]
+        time[1]= splitAt(5)(time[1])[0]
+        console.log(time);
+        
         // console.log("this is tData")
         // console.log(tData);
         
@@ -58,8 +63,9 @@ class Ticket extends Component {
                         {/* <button className="btn btn-primary" onClick={() => this.props.delete(this.props.object.id)}>Delete{this.props.id}</button></div></div> */}
                     </div>
                     <div className="card-header headert">
-                        <h2>E-Ticket</h2>
-                        <h4>{tData.time}</h4>
+                        <h4>date:{time[0]}</h4>
+                        <h4>time:{time[1]}</h4>
+
                         {/* <Moment locale="de">{dateToFormat}</Moment> */}
                         <h2>{`You are customer number:`}</h2>
                         <h1>{tData.turn}</h1>

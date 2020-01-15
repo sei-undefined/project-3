@@ -32,6 +32,7 @@ class Services extends Component {
                         .then((res)=> {
                             // handle success
                             const datetime = res.data.datetime
+                            console.log(datetime.split("T"))
                             this.props.getTicket(id,datetime)
                             // console.log(res.data)
                             return res.data
