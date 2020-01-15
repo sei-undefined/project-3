@@ -14,7 +14,9 @@ class Ticket extends Component {
         let data = this.props.queuesData
         data = data.find(queue=>queue.id ==id)
 
-        const dateToFormat = '1976-04-19T12:59-0500';
+        
+        
+        const dateToFormat = '2020-01-19T12:59-0500';
             
  
         
