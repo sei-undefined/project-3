@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-//import category from './data/category'
+
 import Moment from 'react-moment';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import category from '../data/category'
 import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
 import images from "../../images/images";
- //import Ticket from 'ticket.css'
+ //import Ticket from './ticket.css'
 class Ticket extends Component {
     state = {  }
     // componentDidMount(){
@@ -58,7 +58,8 @@ class Ticket extends Component {
                     </div>
                     <div className="card-body">
                         <p className="card-title">{data.name}</p>
-                        <h2>{`You are ${data.tickets}`}</h2>
+
+<h3>{`You are ${data.tickets}`}</h3>
                         
                         
                         {/* <button className="btn btn-primary" onClick={() => this.props.delete(this.props.object.id)}>Delete{this.props.id}</button></div></div> */}
