@@ -8,6 +8,18 @@ import {withRouter} from 'react-router-dom';
 
 class Ticket extends Component {
     state = {  }
+    // componentDidMount(){
+    //     url= "http://worldtimeapi.org/api/ip"
+    //     axios.get(url)
+    //     .then((res)=> {
+    //     // handle success
+    //     res.datetime
+    //     })
+    //     .catch((error)=> {
+    //     // handle error
+    //     console.log(error)
+    //     })
+    // }
     render() { 
         // finding id
         // console.log("render it")
@@ -19,9 +31,16 @@ class Ticket extends Component {
         const dateToFormat = '1976-04-19T12:59-0500';
         console.log("this is tickets props")
         console.log(this.props)
+
+        // tickets array data
+        const tData = data.tickets[id]
+        console.log("this is tData")
+        console.log(tData);
+        
  
         
     //    let  allCatogry=this.props.Ticket;
+        
         return (
         <div className="container">   
             <div id="accordion" role="tablist">
@@ -29,6 +48,7 @@ class Ticket extends Component {
                     <div className="card-header">
                         <h2>E-Ticket:</h2>
                         <h2>{`You are ${data.tickets}`}</h2>
+                        <h2>{this.a}</h2>
                         <Moment locale="de">{dateToFormat}</Moment>
                     </div>
                     <div className="card-body">
