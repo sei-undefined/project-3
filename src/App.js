@@ -28,6 +28,7 @@ import Services from './components/services/services'
 // import QueueCard from './components/queueCard/QueueCard'
 import Nearby from './components/nearby/Nearby'
 import Test from './components/test'
+import Tickets from './components/tickets/tickets'
 
 function App() {
     console.log()
@@ -52,6 +53,7 @@ return (
           <Route path="/" exact component={CardContainer}/>
           <Route path="/services/:id" exact render={()=>(<Services />)} /> 
           <Route path= "/nearby" exact component = {Nearby} />
+          <Route path= "/tickets" exact component = {Tickets} />
           <Route path= "/services/:id/ticket/:id" exact component = {Ticket} />
 
 

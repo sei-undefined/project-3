@@ -34,13 +34,13 @@ class Ticket extends Component {
         const dateToFormat = '2020-01-19T12:59-0500';
             
 
-        console.log("this is tickets props")
-        console.log(this.props)
+        // console.log("this is tickets props")
+        // console.log(this.props)
 
         // tickets array data
-        const tData = data.tickets[id]
-        console.log("this is tData")
-        console.log(tData);
+        const tData = data.tickets[data.count-1]
+        // console.log("this is tData")
+        // console.log(tData);
         
  
         
@@ -59,9 +59,10 @@ class Ticket extends Component {
                     </div>
                     <div className="card-header headert">
                         <h2>E-Ticket</h2>
-                        <Moment locale="de">{dateToFormat}</Moment>
+                        <h4>{tData.time}</h4>
+                        {/* <Moment locale="de">{dateToFormat}</Moment> */}
                         <h2>{`You are customer number:`}</h2>
-                        <h1>001</h1>
+                        <h1>{tData.turn}</h1>
                         
                     </div>
                    
